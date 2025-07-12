@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background:#000000;
+    font-family: 'Orbitron', sans-serif;
+    overflow-x: hidden
+}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Orbitron:wght@400..900&display=swap');
+/* background */
+.back-vedio {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    z-index: 1;
+    aspect-ratio: 16/9;
+}
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/* nvigation */
+ul {
+    position: absolute;
+    top:10px;
+    right:20px;
+    list-style: none;
+    background: #525252;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 2;
+    overflow: hidden;
+
+
+}
+ul .list {
+    text-align: right;
+    font-size: 20px;
+    display: inline;
+    padding: 12px;
+    background: transparent;
+}
+ul .list a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background: transparent;
+}
+/* navbar styling */
+#home::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 34px;
+    width: 95px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    background: rgb(0, 0, 0);
+    background-size: 200% 100%;
+    z-index: -1;
+    border: 5px;
+    transition: background-position 0.5s ease;
+}
+/* separator */
+.leftcontainer {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    height:100vh;
+    width: 35%;
+    background: #ffffff00;
+    z-index: 2;
+}
+/* logo2 */
+.jpjlogo {
+    height: 70px;
+    width: 70px;
+    border: transparent;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 40%;
+    z-index: 2;
+}
+/* form */
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background:conic-gradient(from 180deg at 50% 50%, #000000, #ffffff) ;
+    filter: blur(1);
+    border: 2px transparent ;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+    z-index: 1;
+}
+.lbl-primary {
+    background: transparent;
+    color: #ffffff;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+    left: -55px;
+    width: 180px;
+}
+/* fixing problem with password lable */
+.lbl1-primary {
+    background: transparent;
+    color: #ffffff;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left;
+    left: -45px;
+    width:200px
+}
+.inp-primary {
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: transparent;
+    padding-left: 10px;
+    font-size: 15px;
+    background: #ffffff;
+    margin-bottom: 20px;
+}
+/* input hover effect */
+.inp-primary:hover {
+    border: 1px;
+    border-style: dashed;
+    filter: blur(1.5px);
+}
+/* button styling */
+.btn-primary {
+    width: 300px;
+    height: 40px;
+    border: #ffffff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #ffffff;
+    background: #000000;
+        background-size: 600%;
+}
+.btn-primary::before {
+    content: "";
+    position: absolute;
+    top: 72.2vh;
+    left: 13vh;
+    height: 50px;
+    width: 310px;
+    background:conic-gradient(from 45deg at 50% 50%, #000000, #ffffff) ;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: -1;
+    filter: blur(5px);
+    animation: glowing 20s infinite linear;
+    
+/* animation */
+transition: all 0.5s ease;
+}
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        baackground-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+    
+}
+/* right container */
+.rightcontainer {
+    position: absolute;
+    top: 90px;
+    right: -120px;
+    z-index: 4;
+    border: 2px transparent;
+    background: #ffffff00;
+    height: 100px;
+    width: 1000px;
+    color: transparent;
+    background: linear-gradient(to right,#cf02d3,#6839f5,#2f68fa,#6a39fd,#ee1ff1);
+    background-clip: text;
+}
+ /* .rightcontainer h1 {
+    font-size: 3rem;
+    font-weight: 9900;
+    text-align: center;
+    -webkit-background-clip: text;
+    background: transparent;
+    
+ } */
+ h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    -webkit-background-clip: text;
+    background: transparent;
+ }
+ h4 {
+    z-index:  9;
+    background: conic-gradient(from 1deg at 50% 50%, #ff0000, #0602ff,#ffae00);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 600px;
+    font-size: 1.5rem; 
+ }
